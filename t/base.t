@@ -1,7 +1,7 @@
 #!perl
 
-use strictures 1;
-
+use strict;
+use warnings;
 use Test::More tests => 3;
 use Data::PowerSet::Hash 'hash_powerset';
 

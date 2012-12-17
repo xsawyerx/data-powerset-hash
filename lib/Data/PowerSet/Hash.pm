@@ -1,7 +1,8 @@
-use strictures 1;
 package Data::PowerSet::Hash;
 # ABSTRACT: Power sets of hashes
 
+use strict;
+use warnings;
 use parent 'Exporter';
 use Data::PowerSet 'powerset';
 
