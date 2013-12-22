@@ -14,12 +14,11 @@ sub hash_powerset {
     my $pset = powerset( keys %hash );
 
     foreach my $combo ( @{$pset} ) {
-        my %tmp_hash = ();
-        foreach my $key ( @{$combo} ) {
-            $tmp_hash{$key} = $hash{$key};
-        }
-
-        push @pset, \%tmp_hash;
+		push @pset, { 
+			map { 
+				$_ => $hash{$_} 
+			} @{$combo}
+		};
     }
 
     return @pset;
