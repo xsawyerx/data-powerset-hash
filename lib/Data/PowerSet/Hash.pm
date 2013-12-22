@@ -14,9 +14,9 @@ sub hash_powerset {
     my $pset = powerset( keys %hash );
 
     foreach my $combo ( @{$pset} ) {
-		push @pset, { 
-			map +( $_ => $hash{$_} ), @{$combo}
-		};
+        push @pset, {
+            map +( $_ => $hash{$_} ), @{$combo}
+        };
     }
 
     return @pset;
