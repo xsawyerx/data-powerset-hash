@@ -1,5 +1,9 @@
 Revision history for Data-PowerSet-Hash
 
+
+0.04    23.12.13
+        * Optimization improvement.
+
 0.03    17.12.12
         * Test fixup for 5.18. Thanks, #p5p!
 
